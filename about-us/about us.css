@@ -1,0 +1,11 @@
+.pics1{
+    background-image: url(./assets/img-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin-top: -80px !important;
+    background-size: cover;
+}
+.photo{
+    font-size: 34px;
+}

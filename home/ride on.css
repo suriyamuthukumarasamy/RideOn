@@ -1,0 +1,134 @@
+.photo {
+  background-image: url('./assets/img-8.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  position: relative;
+  top: -50px;
+}
+
+#line {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 35px;
+}
+
+#lines {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 20px;
+}
+
+.pics1 {
+  background-image: url(./assets/img-8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+#pics2 {
+  background-image: url(./assets/img-8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  background-size: cover;
+}
+
+
+/* Force all cards in owlCarouseltwo to same height */
+#owlCarouseltwo .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#owlCarouseltwo .owl-stage {
+  display: flex;
+}
+
+#owlCarouseltwo .owl-item {
+  display: flex;
+  height: auto;
+}
+#owlCarouseltwo .card-img-top {
+  
+  height: 200px;
+  object-fit: cover;
+}
+#owlCarouseltwo .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Allow the carousel item to fill height */
+#owlCarouseltwo .item {
+  height: 100%;
+}
+
+/* Make sure carousels have relative positioning */
+#owlCarousel,
+#owlCarouselone,
+#owlCarouseltwo {
+  position: relative;
+}
+
+/* owlCarouselone nav positioning */
+#owlCarouselone .owl-nav {
+  position: absolute !important;
+  top: -70px !important;
+  right: -10px !important;
+  display: flex !important;
+  gap: 10px !important;
+  pointer-events: all !important;
+}
+
+/* owlCarouseltwo nav positioning */
+#owlCarouseltwo .owl-nav {
+  position: absolute !important;
+  top: -90px !important;
+  right: 10px !important;
+  display: flex !important;
+  gap: 10px !important;
+  pointer-events: all !important;
+}
+
+/* Button styles for both carousels */
+#owlCarouselone .owl-nav button.owl-prev,
+#owlCarouselone .owl-nav button.owl-next,
+#owlCarouseltwo .owl-nav button.owl-prev,
+#owlCarouseltwo .owl-nav button.owl-next {
+  background: white;
+  border: 2px solid red;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+#owlCarouselone .owl-nav button:hover,
+#owlCarouseltwo .owl-nav button:hover {
+  background: red;
+  color: white;
+}
+
+/* Responsive icon size */
+@media (max-width: 576px) {
+  .fa-circle-play {
+    font-size: 35px !important;
+  }
+}
